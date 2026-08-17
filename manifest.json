@@ -1,0 +1,799 @@
+{
+  "version": "0.0.0",
+  "generatedAt": null,
+  "source": {
+    "workspace": "schema-os",
+    "folder": "getting-started",
+    "commit": "dbc6c76329f0ca52898f67551f73ea6ae227e5f2"
+  },
+  "folder": {
+    "name": "getting-started",
+    "display_name": "Getting Started",
+    "workspace_wide": true
+  },
+  "rewrite": {
+    "strategy": "asset-url",
+    "token": "{{ASSET_ID}}",
+    "pattern": "/api/assets/{{ASSET_ID}}/<filename>"
+  },
+  "counts": {
+    "entries": 142,
+    "folderConfigs": 25,
+    "fonts": 30
+  },
+  "fontStrategy": "undecided",
+  "fonts": [
+    {
+      "file": "Archivo-Variable.woff2",
+      "label": "Archivo (Variable 100-900)",
+      "family": [
+        "Archivo"
+      ],
+      "weights": [
+        "100 900"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "presentations/examples/biennale-yellow-deck.md",
+        "presentations/skills/biennale-yellow.md"
+      ]
+    },
+    {
+      "file": "ArchivoBlack-Regular.woff2",
+      "label": "Archivo Black (Regular)",
+      "family": [
+        "Archivo Black"
+      ],
+      "weights": [
+        "400"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/creative-mode-deck.md",
+        "presentations/skills/creative-mode.md"
+      ]
+    },
+    {
+      "file": "Barlow-Black.woff2",
+      "label": "Barlow (Black 900)",
+      "family": [
+        "Barlow"
+      ],
+      "weights": [
+        "900"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/studio-deck.md",
+        "presentations/skills/studio.md"
+      ]
+    },
+    {
+      "file": "Barlow-Bold.woff2",
+      "label": "Barlow (Bold 700)",
+      "family": [
+        "Barlow"
+      ],
+      "weights": [
+        "700"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/studio-deck.md",
+        "presentations/skills/studio.md"
+      ]
+    },
+    {
+      "file": "Barlow-Medium.woff2",
+      "label": "Barlow (Medium 500)",
+      "family": [
+        "Barlow"
+      ],
+      "weights": [
+        "500"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/studio-deck.md",
+        "presentations/skills/studio.md"
+      ]
+    },
+    {
+      "file": "Barlow-Regular.woff2",
+      "label": "Barlow (Regular 400)",
+      "family": [
+        "Barlow"
+      ],
+      "weights": [
+        "400"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/studio-deck.md",
+        "presentations/skills/studio.md"
+      ]
+    },
+    {
+      "file": "BricolageGrotesque-Variable.woff2",
+      "label": "Bricolage Grotesque (Variable 200-800)",
+      "family": [
+        "Bricolage Grotesque"
+      ],
+      "weights": [
+        "200 800"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "presentations/examples/long-table-deck.md",
+        "presentations/examples/mat-deck.md",
+        "presentations/skills/long-table.md",
+        "presentations/skills/mat.md"
+      ]
+    },
+    {
+      "file": "CormorantGaramond-Italic-Variable.woff2",
+      "label": "Cormorant Garamond (Italic, Variable 400-600)",
+      "family": [
+        "Cormorant Garamond"
+      ],
+      "weights": [
+        "400 600"
+      ],
+      "styles": [
+        "italic"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "presentations/examples/vellum-test-deck.md",
+        "presentations/skills/vellum.md",
+        "publications/examples/paged-manuscript-template.md"
+      ]
+    },
+    {
+      "file": "CourierPrime-Regular.woff2",
+      "label": "Courier Prime (Regular)",
+      "family": [
+        "Courier Prime"
+      ],
+      "weights": [
+        "400"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/vellum-test-deck.md",
+        "presentations/skills/vellum.md"
+      ]
+    },
+    {
+      "file": "DMMono-Regular.woff2",
+      "label": "DM Mono (Regular)",
+      "family": [
+        "DM Mono"
+      ],
+      "weights": [
+        "400"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/cobalt-grid-test-deck.md",
+        "presentations/examples/mat-deck.md",
+        "presentations/skills/cobalt-grid.md",
+        "presentations/skills/mat.md"
+      ]
+    },
+    {
+      "file": "DMSans-Variable.woff2",
+      "label": "DM Sans (Variable 100-1000)",
+      "family": [
+        "DM Sans"
+      ],
+      "weights": [
+        "100 1000"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "infographics/examples/comparison-split-preview.md",
+        "infographics/examples/stat-row-list-preview.md",
+        "infographics/examples/timeline-flow-preview.md",
+        "landing-pages/examples/agency-landing-app.md",
+        "landing-pages/examples/coming-soon-landing-app.md",
+        "landing-pages/examples/creative-landing-app.md",
+        "landing-pages/examples/grayscale-landing-app.md",
+        "landing-pages/examples/new-age-landing-app.md",
+        "presentations/examples/mat-deck.md",
+        "presentations/examples/signal-deck.md",
+        "presentations/examples/vellum-test-deck.md",
+        "presentations/skills/mat.md",
+        "presentations/skills/signal.md",
+        "presentations/skills/vellum.md",
+        "publications/examples/corporate-brochure-template.md",
+        "publications/examples/editorial-newsletter-template.md",
+        "publications/examples/minimal-report-template.md"
+      ]
+    },
+    {
+      "file": "DMSerifDisplay-Regular.woff2",
+      "label": "DM Serif Display (Regular)",
+      "family": [
+        "DM Serif Display"
+      ],
+      "weights": [
+        "400"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/pink-script-deck.md",
+        "presentations/skills/pink-script.md"
+      ]
+    },
+    {
+      "file": "Fraunces-Italic-Variable.woff2",
+      "label": "Fraunces (Italic, Variable)",
+      "family": [
+        "Fraunces"
+      ],
+      "weights": [
+        "400 700"
+      ],
+      "styles": [
+        "italic"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "presentations/examples/long-table-deck.md",
+        "presentations/skills/long-table.md"
+      ]
+    },
+    {
+      "file": "Fraunces-Variable.woff2",
+      "label": "Fraunces (Roman, Variable)",
+      "family": [
+        "Fraunces"
+      ],
+      "weights": [
+        "400 700"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "presentations/examples/long-table-deck.md",
+        "presentations/skills/long-table.md"
+      ]
+    },
+    {
+      "file": "HankenGrotesk-Regular.woff2",
+      "label": "Hanken Grotesk (Regular)",
+      "family": [
+        "Hanken Grotesk"
+      ],
+      "weights": [
+        "400"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "landing-pages/examples/freelancer-landing-app.md",
+        "presentations/examples/cobalt-grid-test-deck.md",
+        "presentations/skills/cobalt-grid.md",
+        "publications/examples/corporate-brochure-template.md"
+      ]
+    },
+    {
+      "file": "HankenGrotesk-SemiBold.woff2",
+      "label": "Hanken Grotesk (SemiBold)",
+      "family": [
+        "Hanken Grotesk"
+      ],
+      "weights": [
+        "600"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "landing-pages/examples/freelancer-landing-app.md",
+        "presentations/examples/cobalt-grid-test-deck.md",
+        "presentations/skills/cobalt-grid.md",
+        "publications/examples/corporate-brochure-template.md"
+      ]
+    },
+    {
+      "file": "IBMPlexMono-Medium.woff2",
+      "label": "IBM Plex Mono (Medium 500)",
+      "family": [
+        "IBM Plex Mono"
+      ],
+      "weights": [
+        "500"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/signal-deck.md",
+        "presentations/examples/studio-deck.md",
+        "presentations/skills/signal.md",
+        "presentations/skills/studio.md"
+      ]
+    },
+    {
+      "file": "InstrumentSerif-Regular.woff2",
+      "label": "Instrument Serif (Regular)",
+      "family": [
+        "Instrument Serif"
+      ],
+      "weights": [
+        "400"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/biennale-yellow-deck.md",
+        "presentations/skills/biennale-yellow.md"
+      ]
+    },
+    {
+      "file": "Inter-Variable.woff2",
+      "label": "Inter (Variable 100-900)",
+      "family": [
+        "Inter"
+      ],
+      "weights": [
+        "100 900"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "presentations/examples/blue-professional-deck.md",
+        "presentations/examples/cartesian-deck.md",
+        "presentations/examples/pink-script-deck.md",
+        "presentations/skills/blue-professional.md",
+        "presentations/skills/cartesian.md",
+        "presentations/skills/pink-script.md"
+      ]
+    },
+    {
+      "file": "JetBrainsMono-Regular.woff2",
+      "label": "JetBrains Mono (Regular)",
+      "family": [
+        "JetBrains Mono"
+      ],
+      "weights": [
+        "400"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/monochrome-deck.md",
+        "presentations/skills/monochrome.md",
+        "publications/examples/latex-article-template.md"
+      ]
+    },
+    {
+      "file": "JetBrainsMono-Variable.woff2",
+      "label": "JetBrains Mono (Variable 100-800)",
+      "family": [
+        "JetBrains Mono"
+      ],
+      "weights": [
+        "100 800"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "infographics/examples/comparison-split-preview.md",
+        "infographics/examples/stat-row-list-preview.md",
+        "infographics/examples/timeline-flow-preview.md",
+        "landing-pages/examples/creative-landing-app.md",
+        "landing-pages/examples/new-age-landing-app.md",
+        "presentations/examples/biennale-yellow-deck.md",
+        "presentations/examples/creative-mode-deck.md",
+        "presentations/examples/editorial-forest-deck.md",
+        "presentations/examples/grove-deck.md",
+        "presentations/examples/neo-grid-bold-deck.md",
+        "presentations/examples/pink-script-deck.md",
+        "presentations/skills/biennale-yellow.md",
+        "presentations/skills/creative-mode.md",
+        "presentations/skills/editorial-forest.md",
+        "presentations/skills/grove.md",
+        "presentations/skills/neo-grid-bold.md",
+        "presentations/skills/pink-script.md"
+      ]
+    },
+    {
+      "file": "Jost-Variable.woff2",
+      "label": "Jost (Variable 200-600)",
+      "family": [
+        "Jost"
+      ],
+      "weights": [
+        "200 600"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "landing-pages/examples/creative-landing-app.md",
+        "presentations/examples/grove-deck.md",
+        "presentations/examples/monochrome-deck.md",
+        "presentations/skills/grove.md",
+        "presentations/skills/monochrome.md"
+      ]
+    },
+    {
+      "file": "Lora-Italic.woff2",
+      "label": "Lora (Italic)",
+      "family": [
+        "Lora"
+      ],
+      "weights": [
+        "400"
+      ],
+      "styles": [
+        "italic"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/monochrome-deck.md",
+        "presentations/skills/monochrome.md",
+        "publications/examples/tufte-essay-template.md"
+      ]
+    },
+    {
+      "file": "Lora-Regular.woff2",
+      "label": "Lora (Regular)",
+      "family": [
+        "Lora"
+      ],
+      "weights": [
+        "400"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "presentations/examples/monochrome-deck.md",
+        "presentations/skills/monochrome.md",
+        "publications/examples/tufte-essay-template.md"
+      ]
+    },
+    {
+      "file": "Newsreader-Regular.woff2",
+      "label": "Newsreader (Regular)",
+      "family": [
+        "Newsreader"
+      ],
+      "weights": [
+        "400",
+        "400 600"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "landing-pages/examples/coming-soon-landing-app.md",
+        "presentations/examples/cobalt-grid-test-deck.md",
+        "presentations/skills/cobalt-grid.md",
+        "publications/examples/paged-manuscript-template.md"
+      ]
+    },
+    {
+      "file": "Outfit-ExtraBold.woff2",
+      "label": "Outfit (ExtraBold)",
+      "family": [
+        "Outfit"
+      ],
+      "weights": [
+        "800"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": false,
+      "referencedBy": [
+        "landing-pages/examples/agency-landing-app.md",
+        "presentations/examples/sticker-pop-test-deck.md",
+        "presentations/skills/sticker-pop.md",
+        "publications/examples/editorial-newsletter-template.md"
+      ]
+    },
+    {
+      "file": "PlayfairDisplay-Variable.woff2",
+      "label": "Playfair Display (Variable 400-700)",
+      "family": [
+        "Playfair Display"
+      ],
+      "weights": [
+        "400 700"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "presentations/examples/cartesian-deck.md",
+        "presentations/examples/grove-deck.md",
+        "presentations/skills/cartesian.md",
+        "presentations/skills/grove.md"
+      ]
+    },
+    {
+      "file": "SourceSerif4-Italic-Variable.woff2",
+      "label": "Source Serif 4 (Italic, Variable)",
+      "family": [
+        "Source Serif 4"
+      ],
+      "weights": [
+        "400 700"
+      ],
+      "styles": [
+        "italic"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "presentations/examples/signal-deck.md",
+        "presentations/skills/signal.md"
+      ]
+    },
+    {
+      "file": "SourceSerif4-Variable.woff2",
+      "label": "Source Serif 4 (Variable, opsz 8-60)",
+      "family": [
+        "Source Serif 4"
+      ],
+      "weights": [
+        "200 900",
+        "400 600",
+        "400 700"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "infographics/examples/comparison-split-preview.md",
+        "infographics/examples/stat-row-list-preview.md",
+        "infographics/examples/timeline-flow-preview.md",
+        "landing-pages/examples/grayscale-landing-app.md",
+        "presentations/examples/editorial-forest-deck.md",
+        "presentations/examples/signal-deck.md",
+        "presentations/skills/editorial-forest.md",
+        "presentations/skills/signal.md",
+        "publications/examples/latex-article-template.md"
+      ]
+    },
+    {
+      "file": "SpaceGrotesk-Variable.woff2",
+      "label": "Space Grotesk (Variable 300-700)",
+      "family": [
+        "Space Grotesk"
+      ],
+      "weights": [
+        "300 700"
+      ],
+      "styles": [
+        "normal"
+      ],
+      "variable": true,
+      "referencedBy": [
+        "presentations/examples/blue-professional-deck.md",
+        "presentations/examples/creative-mode-deck.md",
+        "presentations/examples/neo-grid-bold-deck.md",
+        "presentations/skills/blue-professional.md",
+        "presentations/skills/creative-mode.md",
+        "presentations/skills/neo-grid-bold.md"
+      ]
+    }
+  ],
+  "crossCheck": {
+    "orphanAssets": [
+      "PressStart2P-Regular.woff2",
+      "VT323-Regular.woff2"
+    ],
+    "missingAssets": [],
+    "anomalies": [
+      {
+        "kind": "range-on-static-file",
+        "entry": "landing-pages/examples/coming-soon-landing-app.md",
+        "family": "Newsreader",
+        "weight": "400 600",
+        "file": "Newsreader-Regular.woff2",
+        "detail": "weight range \"400 600\" declared against non-variable file Newsreader-Regular.woff2; intermediate weights are synthesised"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "landing-pages/examples/coming-soon-landing-app.md",
+        "families": [
+          "DM Sans",
+          "Newsreader"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: DM Sans, Newsreader"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "landing-pages/examples/grayscale-landing-app.md",
+        "families": [
+          "DM Sans",
+          "Source Serif 4"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: DM Sans, Source Serif 4"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/examples/grove-deck.md",
+        "families": [
+          "JetBrains Mono",
+          "Jost",
+          "Playfair Display"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: JetBrains Mono, Jost, Playfair Display"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/examples/long-table-deck.md",
+        "families": [
+          "Bricolage Grotesque"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: Bricolage Grotesque"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/examples/monochrome-deck.md",
+        "families": [
+          "JetBrains Mono",
+          "Jost"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: JetBrains Mono, Jost"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/examples/signal-deck.md",
+        "families": [
+          "DM Sans",
+          "IBM Plex Mono"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: DM Sans, IBM Plex Mono"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/examples/vellum-test-deck.md",
+        "families": [
+          "Courier Prime",
+          "DM Sans"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: Courier Prime, DM Sans"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/skills/biennale-yellow.md",
+        "families": [
+          "Archivo",
+          "Instrument Serif",
+          "JetBrains Mono"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: Archivo, Instrument Serif, JetBrains Mono"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/skills/cartesian.md",
+        "families": [
+          "Inter",
+          "Playfair Display"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: Inter, Playfair Display"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/skills/grove.md",
+        "families": [
+          "JetBrains Mono",
+          "Jost",
+          "Playfair Display"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: JetBrains Mono, Jost, Playfair Display"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/skills/long-table.md",
+        "families": [
+          "Bricolage Grotesque"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: Bricolage Grotesque"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/skills/monochrome.md",
+        "families": [
+          "JetBrains Mono",
+          "Jost"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: JetBrains Mono, Jost"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/skills/signal.md",
+        "families": [
+          "DM Sans",
+          "IBM Plex Mono"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: DM Sans, IBM Plex Mono"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "presentations/skills/vellum.md",
+        "families": [
+          "Courier Prime",
+          "DM Sans"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: Courier Prime, DM Sans"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "publications/examples/latex-article-template.md",
+        "families": [
+          "JetBrains Mono",
+          "Source Serif 4"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: JetBrains Mono, Source Serif 4"
+      },
+      {
+        "kind": "italic-used-without-italic-face",
+        "entry": "publications/examples/paged-manuscript-template.md",
+        "families": [
+          "Newsreader"
+        ],
+        "detail": "entry sets font-style: italic; these declared families have no italic cut and would be synthesised: Newsreader"
+      }
+    ]
+  }
+}
