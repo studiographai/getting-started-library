@@ -139,13 +139,16 @@ Set the frame's `pagination` to:
     }
   },
   "margins": { "top": 96, "right": 96, "bottom": 90, "left": 96 },
-  "pageNumbers": { "showOnFirst": false, "position": "bottom-center", "format": "{n}" }
+  "pageNumbers": { "showOnFirst": false, "position": "bottom-center", "format": "{n}",
+                   "fontSize": 12, "color": "#8A7F6D" }
 }
 ```
 
-Three things are doing real work here.
+Four things are doing real work here.
 
-**`header.first` is an empty div, and `showOnFirst` is `false`.** A chapter-opening page carries neither a running head nor a folio — that is standard book practice, not an oversight. Crowning a chapter title with the same chapter title reads as a mistake, and the folio would compete with the drop cap for the reader's first glance. The empty `<div>` is required rather than omitting the slot, so the header still reserves its space and the text block starts at the same height on every page.
+**The folio is set to match the running head.** Left alone, a page number renders as a *folio* by default — the document's own family and weight, at 0.8× its body size and 0.6 of its ink. On this template that alone gets you close to the book treatment: Newsreader, a shade under 10pt, softened against the ivory. The two fields above take it the rest of the way, pinning it to the palette's muted `#8A7F6D` and an exact 9pt so the folio and the running head read as one pair of chrome rather than two near-misses. Both overrides are absolute — whatever you set renders exactly, at full strength — so this is also the pattern to copy whenever a house style dictates the numeral.
+
+**`header.first` is an empty div, and `showOnFirst` is `false`.** A chapter-opening page carries neither a running head nor a folio — that is standard book practice, not an oversight. Crowning a chapter title with the same chapter title reads as a mistake, and the folio would compete with the drop cap for the reader's first glance. Use an empty `<div>` rather than omitting the slot, so the intent is explicit to the next person reading the JSON. It is not load-bearing for layout: **furniture is out-of-flow and never reserves space.** The text block starts at the same height on every page because `margins.top` is uniform, not because a header is present — which is also why a band taller than its margin runs into the body rather than pushing it down. If that ever happens, the render reports `furnitureOverflow` with the exact margin to set.
 
 **Furniture is styled inline, not with classes.** The header renders outside `.pm-doc`, so none of the document's type rules reach it. Either write the styles inline, as above, or add unscoped classes to `shared.head`. Inline is safer: it survives being copied into a new publication that has a different stylesheet.
 

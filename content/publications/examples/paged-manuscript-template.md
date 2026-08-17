@@ -39,7 +39,9 @@ status: draft
         "pageNumbers": {
           "showOnFirst": false,
           "position": "bottom-center",
-          "format": "{n}"
+          "format": "{n}",
+          "fontSize": 12,
+          "color": "#8A7F6D"
         }
       }
     }

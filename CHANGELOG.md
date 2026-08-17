@@ -26,6 +26,30 @@ production (see README → Fonts).
   `missingAssets`, `range-on-static-file`, and a **per-family**
   `italic-used-without-italic-face` check.
 
+### Changed
+
+- **`paged-manuscript`** — corrected a claim that would teach the wrong mental
+  model: the empty `header.first` slot was described as reserving space for the
+  running head. Furniture is out-of-flow and never reserves space; the body
+  starts at the same height on every page because `margins.top` is uniform. That
+  misconception is exactly why a too-tall letterhead reads as unfixable, so it is
+  worth not shipping to every new workspace.
+- **`paged-manuscript-template`** — the folio now carries `fontSize: 12` and
+  `color: #8A7F6D`, matching the running head and the skill's own palette table.
+  It had been rendering in the browser default (Times, 16px, black) under a
+  Newsreader book page, because the platform resolved "the document's body type"
+  from `<body>`, which this template — like every template here — never styles.
+  The engine fix (studiograph#706) makes the default a folio derived from the
+  document's real body text, which lands close on its own; these two fields take
+  it to the palette exactly, and demonstrate the override pattern.
+
+These are the only two files this pagination work touches. The other five
+publication skills declare no furniture and specify no folio type, so the engine
+change only improves them (their page numbers move from Times to each
+document's own face). `tufte-essay` names `#666666` for page numbers in its
+palette; the new default resolves to roughly `#707070`, so it is left on the
+default rather than pinned — flagged here rather than silently changed.
+
 ### Known issues
 
 Pre-existing in the source workspace, carried over unchanged and not yet fixed:
