@@ -138,13 +138,10 @@ Create the deck with `create_artifact` as a **presentation** entry: one frame pe
 ### `shared.head`
 
 ```html
-<style>
-@font-face{font-family:'Archivo Black';font-style:normal;font-weight:400;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/ArchivoBlack-Regular.woff2') format('woff2');}
-@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:300 700;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/SpaceGrotesk-Variable.woff2') format('woff2');}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/JetBrainsMono-Variable.woff2') format('woff2');}
+<style>@import url('https://fonts.googleapis.com/css2?family=Archivo+Black:wght@400&family=JetBrains+Mono:wght@100..800&family=Space+Grotesk:wght@300..700&display=block');
+
+
+
 :root{
   --cream:#EFE9D9; --cream-2:#E4DCC4; --ink:#0F0F0F; --ink-2:#2A2A2A;
   --green:#1F8A4C; --green-dark:#136636; --pink:#F06CA8; --pink-dark:#D14E8B;

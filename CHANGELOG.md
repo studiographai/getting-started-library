@@ -4,11 +4,23 @@ All notable changes to the Getting Started library are recorded here. Versions
 follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html); the version a
 workspace has installed is stamped at provisioning so updates know what to apply.
 
-## [Unreleased]
+## [1.0.0] - 2026-08-19
 
-The content mirror and export path. `v1.0.0` is intentionally **not** cut yet —
-it waits on the font strategy, which waits on the artifact CSP work reaching
-production (see README → Fonts).
+First cut. 142 entries, 25 folder configs, across 10 top-level folders.
+
+- **Fonts resolve from Google Fonts.** The `asset-url` strategy is retired: the
+  `@font-face` blocks that pointed at `/api/assets/{{ASSET_ID}}/<file>.woff2`
+  are replaced by one `css2` `@import` per `<style>`, generated from the
+  manifest's per-file requirement set. 47 entries, 28 distinct URLs, every one
+  verified to return `@font-face` CSS. Weight axes are preserved per template
+  (variable faces become ranges, static faces an explicit weight list, and
+  families used in both romans and italics emit `ital,wght`).
+- `manifest.json`: `fontStrategy: "google-fonts"`, `version: 1.0.0`, `generatedAt` stamped.
+- `your-brand/skills/using-google-fonts.md` rewritten — it taught the upload
+  workaround for a CSP limitation that no longer exists. Uploading is now
+  documented as the path for typefaces that are *not* on Google Fonts.
+- `tools/rewrite-to-google-fonts.mjs` added, so a future re-export can be
+  converted in one command.
 
 ### Added
 

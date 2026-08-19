@@ -131,11 +131,9 @@ Create the deck with `create_artifact` as a **presentation** entry: one frame pe
 ### `shared.head`
 
 ```html
-<style>
-@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400 700;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/PlayfairDisplay-Variable.woff2') format('woff2');}
-@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/Inter-Variable.woff2') format('woff2');}
+<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@400..700&display=block');
+
+
 :root{
   --bg:#EDE8E0; --bg-2:#E2DBD1; --ink:#1A1A1A; --text-2:#5A5A5A;
   --accent:#8A8178; --line:#B8B0A4; --overlay:rgba(255,255,255,0.3);

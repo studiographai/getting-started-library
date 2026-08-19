@@ -37,6 +37,6 @@ status: draft
     }
   ],
   "shared": {
-    "head": "<style>@font-face{font-family:'DM Sans';font-weight:100 1000;src:url('/api/assets/{{ASSET_ID}}/DMSans-Variable.woff2') format('woff2');}*{box-sizing:border-box;}.mr-doc{font-family:'DM Sans',system-ui,sans-serif;color:#1A1A1A;max-width:576px;margin:0 auto;}.mr-title{font-size:30px;font-weight:700;margin:0 0 8px;}.mr-meta{font-size:10pt;text-transform:uppercase;letter-spacing:0.06em;color:#666;margin:0 0 36px;}.mr-h2{font-size:20px;font-weight:700;margin:32px 0 12px;padding-top:20px;border-top:1px solid #E5E5E5;}.mr-h2:first-of-type{border-top:none;padding-top:0;margin-top:0;}.mr-p{font-size:11pt;line-height:1.6;margin:0 0 14px;}.mr-list{margin:0 0 14px 20px;padding:0;}.mr-list li{font-size:11pt;line-height:1.6;margin-bottom:6px;}</style>"
+    "head": "<style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&display=block');*{box-sizing:border-box;}.mr-doc{font-family:'DM Sans',system-ui,sans-serif;color:#1A1A1A;max-width:576px;margin:0 auto;}.mr-title{font-size:30px;font-weight:700;margin:0 0 8px;}.mr-meta{font-size:10pt;text-transform:uppercase;letter-spacing:0.06em;color:#666;margin:0 0 36px;}.mr-h2{font-size:20px;font-weight:700;margin:32px 0 12px;padding-top:20px;border-top:1px solid #E5E5E5;}.mr-h2:first-of-type{border-top:none;padding-top:0;margin-top:0;}.mr-p{font-size:11pt;line-height:1.6;margin:0 0 14px;}.mr-list{margin:0 0 14px 20px;padding:0;}.mr-list li{font-size:11pt;line-height:1.6;margin-bottom:6px;}</style>"
   }
 }

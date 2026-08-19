@@ -150,15 +150,11 @@ Create the deck with `create_artifact` as a **presentation** entry: one frame pe
 ### `shared.head`
 
 ```html
-<style>
-@font-face{font-family:'Newsreader';font-style:normal;font-weight:400;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/Newsreader-Regular.woff2') format('woff2');}
-@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:400;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/HankenGrotesk-Regular.woff2') format('woff2');}
-@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:600;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/HankenGrotesk-SemiBold.woff2') format('woff2');}
-@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/DMMono-Regular.woff2') format('woff2');}
+<style>@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&family=Hanken+Grotesk:wght@400;600&family=Newsreader:wght@400;600&display=block');
+
+
+
+
 :root{
   --paper:#F0EBDE; --paper-2:#E6E0CE; --ink:#1F2BE0; --ink-soft:#5560E5;
   --grid:rgba(31,43,224,0.10); --ink-faint:rgba(31,43,224,0.18);

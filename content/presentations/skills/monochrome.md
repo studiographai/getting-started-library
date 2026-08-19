@@ -144,15 +144,11 @@ Create the deck with `create_artifact` as a **presentation** entry: one frame pe
 ### `shared.head`
 
 ```html
-<style>
-@font-face{font-family:'Jost';font-style:normal;font-weight:200 600;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/Jost-Variable.woff2') format('woff2');}
-@font-face{font-family:'Lora';font-style:normal;font-weight:400;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/Lora-Regular.woff2') format('woff2');}
-@font-face{font-family:'Lora';font-style:italic;font-weight:400;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/Lora-Italic.woff2') format('woff2');}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/JetBrainsMono-Regular.woff2') format('woff2');}
+<style>@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&family=Jost:wght@200..600&family=Lora:ital,wght@0,400;1,400&display=block');
+
+
+
+
 :root{
   --c-bg:#FAFADF; --c-bg-alt:#F2F2D2; --c-bg-deep:#F0F0D4; --c-bg-cream:#F5F0E4;
   --c-fg:#1A1A16; --c-fg-2:#5E5E54; --c-fg-3:#8A8A80;

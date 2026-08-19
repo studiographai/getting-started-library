@@ -117,17 +117,12 @@ Create the deck with `create_artifact` as a **presentation** entry: one frame pe
 ### `shared.head`
 
 ```html
-<style>
-@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/Barlow-Regular.woff2') format('woff2');}
-@font-face{font-family:'Barlow';font-style:normal;font-weight:500;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/Barlow-Medium.woff2') format('woff2');}
-@font-face{font-family:'Barlow';font-style:normal;font-weight:700;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/Barlow-Bold.woff2') format('woff2');}
-@font-face{font-family:'Barlow';font-style:normal;font-weight:900;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/Barlow-Black.woff2') format('woff2');}
-@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/IBMPlexMono-Medium.woff2') format('woff2');}
+<style>@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500&display=block');
+
+
+
+
+
 :root{
   --black:#1C1C1C; --black-alt:#242422;
   --yellow:#F5D200; --yellow-alt:#F0CC00;

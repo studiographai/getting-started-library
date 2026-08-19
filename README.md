@@ -4,7 +4,7 @@ The canonical, versioned source for the Studiograph **Getting Started** library 
 
 Improvements land here first and flow forward into workspaces. A workspace copy is a *rendering* of this repo, not the other way round.
 
-> **Status: unreleased.** The content mirror and the export path are in place; `v1.0.0` is deliberately not cut yet. See [Fonts](#fonts) for the one open dependency.
+> **Status: released — `v1.0.0`.** Fonts resolve from Google Fonts at render time; see [Fonts](#fonts).
 
 ## Layout
 
@@ -45,7 +45,20 @@ the way back in. The export fails hard if any real id survives the rewrite.
 
 ## Fonts
 
-**No font binaries ship in this version, and the strategy is not yet settled.**
+**No font binaries ship, and none are needed: the strategy is Google Fonts.**
+
+Every family the templates use is on Google Fonts under the OFL. Each `<style>`
+carries one `@import` of a `css2` URL built from the per-file requirement set
+below — family, weight range, style — so a template pulls exactly the axes it
+declares and nothing more. `display=block` (not `swap`) so an export cannot be
+caught mid-swap and bake in the fallback.
+
+The runtime admits `fonts.googleapis.com` / `fonts.gstatic.com` at the artifact
+CSP layer and inlines them at export time, so exports stay self-contained. That
+was the dependency `v1.0.0` waited on; it shipped in `0.1.0-alpha.66`.
+
+Regenerate the imports after a re-export with
+`node tools/rewrite-to-google-fonts.mjs --apply`.
 
 Every family the templates use — all 21 declared, across 30 referenced files — is
 available on Google Fonts under the OFL, with the italic cuts the templates need.
