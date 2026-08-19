@@ -145,15 +145,11 @@ Create the deck with `create_artifact` as a **presentation** entry: one frame pe
 ### `shared.head`
 
 ```html
-<style>
-@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400 700;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/SourceSerif4-Variable.woff2') format('woff2');}
-@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:400 700;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/SourceSerif4-Italic-Variable.woff2') format('woff2');}
-@font-face{font-family:'DM Sans';font-style:normal;font-weight:100 1000;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/DMSans-Variable.woff2') format('woff2');}
-@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/IBMPlexMono-Medium.woff2') format('woff2');}
+<style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&family=IBM+Plex+Mono:wght@500&family=Source+Serif+4:ital,wght@0,200..900;1,400..700&display=block');
+
+
+
+
 :root{
   --navy:#1C2644; --navy-alt:#232F55; --cream:#F0ECE3; --cream-alt:#E6E0D4;
   --fg:#E2DCD0; --fg-2:#8A96A8; --fg-3:#4E5A6E;

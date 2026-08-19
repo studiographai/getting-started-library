@@ -87,9 +87,8 @@ Create the deck with `create_artifact` as a **presentation** entry: one frame pe
 ### `shared.head`
 
 ```html
-<style>
-@font-face{font-family:'Outfit';font-style:normal;font-weight:800;font-display:block;
-  src:url('/api/assets/{{ASSET_ID}}/Outfit-ExtraBold.woff2') format('woff2');}
+<style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&display=block');
+
 :root{
   --sp-bg:#fff2e8; --sp-surface:#ffe6d3; --sp-text:#2d1b4e; --sp-ink:#2d1b4e;
   --sp-accent:#ff4d8d; --sp-accent2:#6d4cff; --sp-accent3:#ffd24c; --sp-muted:#9a8aa8;

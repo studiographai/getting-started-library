@@ -1,6 +1,6 @@
 {
-  "version": "0.0.0",
-  "generatedAt": null,
+  "version": "1.0.0",
+  "generatedAt": "2026-08-19T21:11:10Z",
   "source": {
     "workspace": "schema-os",
     "folder": "getting-started",
@@ -21,7 +21,7 @@
     "folderConfigs": 25,
     "fonts": 30
   },
-  "fontStrategy": "undecided",
+  "fontStrategy": "google-fonts",
   "fonts": [
     {
       "file": "Archivo-Variable.woff2",

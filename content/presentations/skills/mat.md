@@ -132,13 +132,10 @@ Create the deck with `create_artifact` as a **presentation** entry: one frame pe
 ### `shared.head`
 
 ```html
-<style>
-@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:200 800;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/BricolageGrotesque-Variable.woff2') format('woff2');}
-@font-face{font-family:'DM Sans';font-style:normal;font-weight:100 1000;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/DMSans-Variable.woff2') format('woff2');}
-@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/DMMono-Regular.woff2') format('woff2');}
+<style>@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@200..800&family=DM+Mono:wght@400&family=DM+Sans:wght@100..1000&display=block');
+
+
+
 :root{
   --bg:#232E26; --bg-alt:#2E3D30; --cream:#EDE6D0; --cream-alt:#E4DAC4;
   --fg:#F0E8D2; --fg-2:rgba(240,232,210,0.58); --fg-3:rgba(240,232,210,0.3);

@@ -137,13 +137,10 @@ Create the deck with `create_artifact` as a **presentation** entry: one frame pe
 ### `shared.head`
 
 ```html
-<style>
-@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400 600;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/CormorantGaramond-Italic-Variable.woff2') format('woff2');}
-@font-face{font-family:'DM Sans';font-style:normal;font-weight:100 1000;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/DMSans-Variable.woff2') format('woff2');}
-@font-face{font-family:'Courier Prime';font-style:normal;font-weight:400;
-  font-display:block;src:url('/api/assets/{{ASSET_ID}}/CourierPrime-Regular.woff2') format('woff2');}
+<style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400..600&family=Courier+Prime:wght@400&family=DM+Sans:wght@100..1000&display=block');
+
+
+
 :root{
   --navy:#2A3870; --navy-alt:#343F80; --navy-deep:#1F2858; --navy-mid:#34407A;
   --yellow:#E8D85C; --yellow-2:rgba(232,216,92,0.62); --yellow-3:rgba(232,216,92,0.32);
