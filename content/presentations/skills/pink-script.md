@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: pink-script
 created_at: '2026-08-14T21:00:20.031Z'
-updated_at: '2026-08-14T21:00:20.031Z'
+updated_at: '2026-08-23T14:55:13.132Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -44,7 +44,7 @@ Reach for Pink Script when the deck should feel nocturnal, intentional and a lit
 
 **Avoid it** for daytime corporate and traditional B2B, where the dark canvas and hot-pink accent read as too styled.
 
-It is the third dark theme in this folder and distinct from both: `aurora` is engineered and developer-native, `vellum` is scholarly and still, Pink Script is glamorous and atmospheric. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+It is the third dark theme in this folder and distinct from both: `aurora` is engineered and developer-native, `vellum` is scholarly and still, Pink Script is glamorous and atmospheric. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

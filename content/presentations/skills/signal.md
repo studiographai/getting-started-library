@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: signal
 created_at: '2026-08-14T21:27:08.159Z'
-updated_at: '2026-08-14T21:27:08.159Z'
+updated_at: '2026-08-23T14:55:15.318Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -43,7 +43,7 @@ Reach for Signal when the deck should feel weighty and credibly institutional �
 
 **Avoid it** where the deck should feel hot, fast or playful. The navy-and-gold restraint commits to a sober voice.
 
-It is the most *institutional* theme in this folder. Where `blue-professional` is modern-consulting and `cartesian` is museum-quiet, Signal is board-room. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+It is the most *institutional* theme in this folder. Where `blue-professional` is modern-consulting and `cartesian` is museum-quiet, Signal is board-room. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

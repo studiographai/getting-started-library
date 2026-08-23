@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: aurora
 created_at: '2026-08-14T18:30:03.313Z'
-updated_at: '2026-08-15T00:31:24.267Z'
+updated_at: '2026-08-23T14:54:41.911Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -36,7 +36,7 @@ A dark developer-doc deck theme: near-black canvas, one violet light source, rou
 
 Reach for Aurora when the deck should feel engineered rather than marketed — release notes, technical updates, product or platform decks, internal engineering reviews. If a page could pass for a screenshot of a well-made docs site late at night, it is on theme.
 
-Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides` for those. Aurora is a self-contained theme and does not mix with the Schema deck chrome.
+Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]). Aurora is a self-contained theme, and it does not mix with a corporate brand system's deck chrome.
 
 ## Palette
 

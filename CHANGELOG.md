@@ -4,6 +4,35 @@ All notable changes to the Getting Started library are recorded here. Versions
 follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html); the version a
 workspace has installed is stamped at provisioning so updates know what to apply.
 
+## [1.1.0] - 2026-08-23
+
+Self-containment pass: the library no longer names or depends on anything in the
+source workspace, and gains one new core skill.
+
+### Added
+
+- **`core-skills/skills/word-to-publication.md`** — Word Document to Publication:
+  turn a `.docx` into a publication that reproduces it faithfully (read the OOXML
+  for page size, margins, styles, exact leading, fonts, headers/footers and page
+  numbers; map to a paginated frame with furniture; verify against Word's own
+  render). First of a planned series: PowerPoint → presentation, Excel → dataset.
+  Entry count: 142 → 143.
+
+### Changed
+
+- **18 presentation theme skills** carried a sentence directing readers to the
+  source studio's internal `schema-slides` / `proposal-slides` skills — a
+  dangling reference in every provisioned workspace. Each now reads: "Do not use
+  it for formal client proposals in your studio's own visual system — set those
+  in your own brand deck skill (see [[brand-skill-template]])." (Wording adapted
+  per file for aurora, bright-sans, creative-mode, and sticker-pop; aurora's
+  "Schema deck chrome" clause is now "a corporate brand system's deck chrome.")
+- **`core-skills/skills/humanizer-2.md`** — removed the `copied_from` frontmatter
+  pointer into the source workspace's `skills` folder (dangling provenance in a
+  fresh tenant).
+- `manifest.json`: `version` 1.1.0, `counts.entries` 143, `source.commit` updated
+  to the workspace state these edits mirror.
+
 ## [1.0.0] - 2026-08-19
 
 First cut. 142 entries, 25 folder configs, across 10 top-level folders.

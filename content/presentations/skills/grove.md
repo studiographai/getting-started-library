@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: grove
 created_at: '2026-08-14T21:17:47.840Z'
-updated_at: '2026-08-14T21:17:47.840Z'
+updated_at: '2026-08-23T14:55:00.740Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -43,7 +43,7 @@ Reach for Grove when the deck should feel organic, considered and grown-up — s
 
 **Avoid it** where the deck needs neon energy or rapid-fire pop. The forest canvas and Playfair serif commit to a slow, classical voice.
 
-It shares Playfair with `cartesian` but goes somewhere different: Cartesian is stone-on-stone and cool, Grove is forest-and-coral and warm. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+It shares Playfair with `cartesian` but goes somewhere different: Cartesian is stone-on-stone and cool, Grove is forest-and-coral and warm. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

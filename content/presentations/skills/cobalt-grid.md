@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: cobalt-grid
 created_at: '2026-08-14T19:19:57.230Z'
-updated_at: '2026-08-14T22:30:49.978Z'
+updated_at: '2026-08-23T14:54:50.941Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -45,7 +45,7 @@ Reach for Cobalt Grid when the deck should read like a quietly serious design or
 
 **Avoid it** for decks that need warmth, multi-colour energy, or a casual voice. The strict cobalt-and-cream palette is intentionally austere. Where `bright-sans` is friendly and `sticker-pop` is playful, this one is studious and printed.
 
-Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides` for those.
+Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: creative-mode
 created_at: '2026-08-14T20:53:29.090Z'
-updated_at: '2026-08-14T20:53:29.090Z'
+updated_at: '2026-08-23T14:54:56.300Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -44,7 +44,7 @@ Reach for Creative Mode when the deck should lead with taste — creative agency
 
 **Avoid it** where institutional restraint and quiet authority are needed. The saturated multi-accent palette reads expressive, not formal.
 
-Note how it differs from `neo-grid-bold`, the other brutalist theme here: that one is monochrome-plus-one-neon on a strict 12×8 grid with **no shadows at all**. Creative Mode is four saturated accents, free composition, and **hard offset shadows are a defining feature**. Do not use either for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+Note how it differs from `neo-grid-bold`, the other brutalist theme here: that one is monochrome-plus-one-neon on a strict 12×8 grid with **no shadows at all**. Creative Mode is four saturated accents, free composition, and **hard offset shadows are a defining feature**. Do not use either for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

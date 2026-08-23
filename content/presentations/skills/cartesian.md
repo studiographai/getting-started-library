@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: cartesian
 created_at: '2026-08-14T21:13:38.993Z'
-updated_at: '2026-08-14T21:13:38.993Z'
+updated_at: '2026-08-23T14:54:49.516Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -44,7 +44,7 @@ Reach for Cartesian when the deck should feel quiet, considered and grown-up —
 
 **Avoid it** where the deck needs visual heat, multiple accents, or urgency. The warm-neutral palette is deliberately low-energy.
 
-Among the light editorial themes here it sits closest to `monochrome`, but warmer and softer: Monochrome is ivory-and-ink with zero decoration, Cartesian adds stone tones and drafting geometry. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+Among the light editorial themes here it sits closest to `monochrome`, but warmer and softer: Monochrome is ivory-and-ink with zero decoration, Cartesian adds stone tones and drafting geometry. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

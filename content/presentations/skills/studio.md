@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: studio
 created_at: '2026-08-14T21:34:15.275Z'
-updated_at: '2026-08-14T21:34:15.275Z'
+updated_at: '2026-08-23T14:55:19.769Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -43,7 +43,7 @@ Reach for Studio when the deck should feel electric and design-led — studio cr
 
 **Avoid it** for anything quiet or institutional. This is the loudest palette in the set.
 
-It shares neo-brutalist DNA with `neo-grid-bold` and `creative-mode`, but is more reductive than either: no grid system, no four-colour palette, no shadows. Just two colours and enormous type. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+It shares neo-brutalist DNA with `neo-grid-bold` and `creative-mode`, but is more reductive than either: no grid system, no four-colour palette, no shadows. Just two colours and enormous type. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

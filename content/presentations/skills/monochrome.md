@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: monochrome
 created_at: '2026-08-14T20:13:29.333Z'
-updated_at: '2026-08-14T20:13:29.333Z'
+updated_at: '2026-08-23T14:55:05.881Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -46,7 +46,7 @@ Reach for Monochrome when the words should be the only thing on the page — use
 
 **Avoid it** for decks that need visual personality or colour-led storytelling. The all-ink palette is intentionally austere.
 
-Among the themes in this folder it is the most restrained: `cobalt-grid` is also editorial but keeps one electric accent and a permanent grid; Monochrome removes even that. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+Among the themes in this folder it is the most restrained: `cobalt-grid` is also editorial but keeps one electric accent and a permanent grid; Monochrome removes even that. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

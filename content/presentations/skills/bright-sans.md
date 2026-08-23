@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: bright-sans
 created_at: '2026-08-14T18:39:52.351Z'
-updated_at: '2026-08-15T00:31:38.486Z'
+updated_at: '2026-08-23T14:54:47.412Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -37,7 +37,7 @@ A friendly product-update deck theme: bright white canvas, generous breathing ro
 
 Reach for Bright Sans when the deck should feel like a well-made product page — feature launches, product updates, roadmaps, onboarding, or anything customer-facing that wants warmth without decoration. If a slide could sit above the fold of a clean product site, it is on theme.
 
-It is the light counterpart to `aurora`. Aurora reads engineered and late-night; Bright Sans reads open and daylit. Do not mix them in one deck, and do not use either for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides` for those.
+It is the light counterpart to `aurora`. Aurora reads engineered and late-night; Bright Sans reads open and daylit. Do not mix them in one deck, and do not use either for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

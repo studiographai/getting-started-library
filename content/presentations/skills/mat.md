@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: mat
 created_at: '2026-08-14T21:22:01.313Z'
-updated_at: '2026-08-14T21:22:01.313Z'
+updated_at: '2026-08-23T14:55:04.405Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -43,7 +43,7 @@ Reach for Mat when the deck should feel mid-century, tactile and intentional —
 
 **Avoid it** where fast tech energy or institutional restraint is needed. The muted sage and burnt orange are deliberately warm and slow.
 
-It reads as industrial-design portfolio meets boutique product launch — never tech demo. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+It reads as industrial-design portfolio meets boutique product launch — never tech demo. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 
