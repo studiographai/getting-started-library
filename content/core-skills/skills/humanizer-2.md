@@ -2,14 +2,10 @@
 entity_type: skill
 entity_id: humanizer-2
 created_at: '2026-08-14T21:11:50.175Z'
-updated_at: '2026-08-14T22:40:59.071Z'
+updated_at: '2026-08-23T15:01:31.339Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-07-10'
-copied_from:
-  repo: skills
-  entity_type: skill
-  entity_id: humanizer
 name: Humanizer
 description: >-
   Remove signs of AI-generated writing from text. Use when editing or reviewing

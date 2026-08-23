@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: vellum
 created_at: '2026-08-14T20:27:35.801Z'
-updated_at: '2026-08-14T20:27:35.801Z'
+updated_at: '2026-08-23T14:55:21.213Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -43,7 +43,7 @@ Reach for Vellum when the deck should feel scholarly, literary, and quietly inte
 
 **Avoid it** for anything needing visual heat or pop. The navy-and-warm-yellow Cormorant aesthetic is intentionally low-tempo.
 
-It is the only dark theme in this folder besides `aurora`, and it is nothing like it: Aurora is engineered and nocturnal, Vellum is handwritten and still. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+It is the only dark theme in this folder besides `aurora`, and it is nothing like it: Aurora is engineered and nocturnal, Vellum is handwritten and still. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

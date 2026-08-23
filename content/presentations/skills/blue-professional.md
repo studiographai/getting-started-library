@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: blue-professional
 created_at: '2026-08-14T21:04:06.456Z'
-updated_at: '2026-08-14T21:04:06.456Z'
+updated_at: '2026-08-23T14:54:45.302Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -44,7 +44,7 @@ Reach for Blue Professional when the deck should read modern-considered and ligh
 
 **Avoid it** where the deck should feel hot, playful or intentionally informal. The cool electric-blue restraint reads as overly polished.
 
-This is the most conventional theme in the folder, and deliberately so — it is the one to reach for when the others would read as too styled for the audience. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+This is the most conventional theme in the folder, and deliberately so — it is the one to reach for when the others would read as too styled for the audience. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

@@ -2,7 +2,7 @@
 entity_type: skill
 entity_id: editorial-forest
 created_at: '2026-08-14T20:21:20.878Z'
-updated_at: '2026-08-17T01:46:45.017Z'
+updated_at: '2026-08-23T14:54:58.444Z'
 created_by: philip-kleemann
 updated_by: christian-marc-schmidt
 date: '2026-08-14'
@@ -45,7 +45,7 @@ Reach for Editorial Forest when the deck should feel considered and unhurried �
 
 **Avoid it** for anything that needs to feel urgent, punchy, or sales-driven. The palette and rhythm are intentionally quiet.
 
-Among the themes in this folder it is the warmest of the editorial group: `monochrome` strips colour out entirely, `cobalt-grid` keeps one cold accent on a grid. Editorial Forest is the one with actual warmth. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+Among the themes in this folder it is the warmest of the editorial group: `monochrome` strips colour out entirely, `cobalt-grid` keeps one cold accent on a grid. Editorial Forest is the one with actual warmth. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

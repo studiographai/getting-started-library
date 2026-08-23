@@ -1,10 +1,10 @@
 {
-  "version": "1.0.0",
-  "generatedAt": "2026-08-19T21:11:10Z",
+  "version": "1.1.0",
+  "generatedAt": "2026-08-23T18:18:12Z",
   "source": {
     "workspace": "schema-os",
     "folder": "getting-started",
-    "commit": "dbc6c76329f0ca52898f67551f73ea6ae227e5f2"
+    "commit": "5cd7e0b512183066a09b48be809259e578315978"
   },
   "folder": {
     "name": "getting-started",
@@ -17,7 +17,7 @@
     "pattern": "/api/assets/{{ASSET_ID}}/<filename>"
   },
   "counts": {
-    "entries": 142,
+    "entries": 143,
     "folderConfigs": 25,
     "fonts": 30
   },

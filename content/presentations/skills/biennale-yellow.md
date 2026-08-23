@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: biennale-yellow
 created_at: '2026-08-14T21:39:17.957Z'
-updated_at: '2026-08-14T21:39:17.957Z'
+updated_at: '2026-08-23T14:54:43.173Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -45,7 +45,7 @@ Reach for Biennale Yellow when the deck should feel like a museum's annual progr
 
 **Avoid it** where visual punch or multi-colour energy is needed. The warm-paper canvas and one-yellow palette are intentionally quiet.
 
-It is the atmospheric counterpart to `cartesian` — both are warm, quiet and hairline-ruled, but Cartesian's depth comes from drafting geometry while this one's comes from light. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+It is the atmospheric counterpart to `cartesian` — both are warm, quiet and hairline-ruled, but Cartesian's depth comes from drafting geometry while this one's comes from light. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 

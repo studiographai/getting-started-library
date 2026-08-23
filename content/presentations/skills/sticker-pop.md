@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: sticker-pop
 created_at: '2026-08-14T18:59:49.390Z'
-updated_at: '2026-08-15T00:31:55.550Z'
+updated_at: '2026-08-23T14:55:17.511Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -37,7 +37,7 @@ A sticker book glued to a peach risograph print. Soft warm paper, hot-pink and g
 
 Reach for Sticker Pop when the deck should feel handmade and cheerful — internal culture decks, team offsites, workshop and class material, playful launches, anything for an audience that would rather not sit through another grid of grey cards. If the slide could be screen-printed onto a tote bag, it is on theme.
 
-It is the loudest theme in this folder. Do not use it for client proposals in the studio's own visual system (`schema-slides`, `proposal-slides`), and do not mix it with `aurora`, `bright-sans`, or `replit`.
+It is the loudest theme in this folder. Do not use it for formal client proposals in your studio's own visual system (set those in your own brand deck skill — see [[brand-skill-template]]), and do not mix it with `aurora`, `bright-sans`, or `replit`.
 
 ## Palette
 

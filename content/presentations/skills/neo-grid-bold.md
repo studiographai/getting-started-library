@@ -2,9 +2,9 @@
 entity_type: skill
 entity_id: neo-grid-bold
 created_at: '2026-08-14T20:38:18.444Z'
-updated_at: '2026-08-14T20:38:18.444Z'
+updated_at: '2026-08-23T14:55:10.978Z'
 created_by: philip-kleemann
-updated_by: philip-kleemann
+updated_by: christian-marc-schmidt
 date: '2026-08-14'
 tags:
   - theme
@@ -45,7 +45,7 @@ Reach for Neo-Grid Bold when the deck should feel confident and graphic — prod
 
 **Avoid it** for anything that needs to feel quiet, traditional or warm. The neon-yellow accent and uppercase display commit to a loud voice.
 
-It is the opposite pole from `monochrome` and `vellum` in this folder: where those whisper and leave the page empty, this one shouts and fills every cell. Do not use it for client proposals in the studio's own visual system — use `schema-slides` or `proposal-slides`.
+It is the opposite pole from `monochrome` and `vellum` in this folder: where those whisper and leave the page empty, this one shouts and fills every cell. Do not use it for formal client proposals in your studio's own visual system — set those in your own brand deck skill (see [[brand-skill-template]]).
 
 ## Palette
 
