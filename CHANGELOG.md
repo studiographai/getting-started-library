@@ -4,6 +4,30 @@ All notable changes to the Getting Started library are recorded here. Versions
 follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html); the version a
 workspace has installed is stamped at provisioning so updates know what to apply.
 
+## [1.2.0] - 2026-08-24
+
+Second core skill in the import series, validated end-to-end before landing.
+
+### Added
+
+- **`core-skills/skills/powerpoint-to-presentation.md`** — PowerPoint Deck to
+  Presentation: decode a `.pptx` (EMU geometry, text runs, the layout/master
+  inheritance chain, theme) onto fixed-size frames; carry images through the
+  presigned upload flow (binary is never retyped through an agent); a full
+  "Damaged exports" taxonomy for design-tool PPTX exports (flattened weights,
+  dropped paragraph spacing, phantom shapes, rasterized charts, oversized text
+  boxes, misoriented ticks) with repairs; a PDF-pages archival fallback.
+  Validated by a from-scratch skill run that reproduced a hand-reviewed import
+  byte-for-byte across all 8 slides. Entry count: 143 → 144.
+
+### Changed
+
+- **`core-skills/skills/word-to-publication.md`** — added the strut rule to
+  Type mapping (font-size must live on the block that carries a fixed
+  line-height, or headless renderers inflate the line box ~1.3×), and the
+  Series section now links the new PowerPoint skill.
+- `manifest.json`: `version` 1.2.0, `counts.entries` 144, `source.commit` updated.
+
 ## [1.1.0] - 2026-08-23
 
 Self-containment pass: the library no longer names or depends on anything in the

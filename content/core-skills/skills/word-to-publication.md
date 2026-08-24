@@ -2,7 +2,7 @@
 entity_type: skill
 entity_id: word-to-publication
 created_at: '2026-08-23T00:00:14.132Z'
-updated_at: '2026-08-23T14:53:32.942Z'
+updated_at: '2026-08-24T02:01:29.613Z'
 created_by: christian-marc-schmidt
 updated_by: christian-marc-schmidt
 date: '2026-08-22'
@@ -106,6 +106,7 @@ A publication is **one `pages` frame** with `pagination`. Never one frame per pa
 - Family: the real family from the font table, loaded via `@font-face` in `shared.head` from workspace assets (see [[using-custom-fonts]]; if your workspace has a font-kit skill for the family, use its declarations). Load **every** weight/style the document uses in one edit — a partial set makes the browser faux-bold and looks worse than the fallback. Always give a fallback stack.
 - Size: half-points ÷ 2 × 4⁄3 → px. Line: `lineRule="exact"` → `line-height: <twentieths ÷ 15>px` and **no** vertical padding on the block; `auto` 240 → `line-height: normal` is *not* the same as Word (Word single spacing uses the font's *win* ascent+descent) — compute it: `(winAscent + winDescent) ÷ unitsPerEm × size`. `atLeast` → `min-height` on the line is not expressible; use the exact value if the text never exceeds it.
 - **Baseline within an exact line:** Word places the baseline at `lineTop + (lineHeight − descentPortion)` and, in the cases measured, that lands lower than CSS's half-leading placement by about 1 px at 12/15 pt. Measure it against the reference PDF and absorb the difference in `margins.top` / the page-1 spacer, not in per-line padding.
+- **Put `font-size` on the same block element that carries the fixed `line-height`** — never only on inner spans. If a block keeps a small inherited font-size (the 16px strut) while a large span sets its own, some render environments inflate the line box far past the fixed line-height (measured ~1.3× in headless rendering, invisible in a quick local check). Spans override only deltas from the block's size.
 - Kerning/ligatures: `font-kerning:none; font-variant-ligatures:none` unless the document enables them. Add `text-rendering:geometricPrecision` so Chrome uses linear advance widths — without it, glyph widths round to whole pixels and roughly one word in six lines wraps differently from Word.
 - Tracking: twentieths of a point × 1⁄15 → px `letter-spacing`.
 - Indents: `left`/`hanging` → `padding-left` + absolutely positioned marker (bullets) — reproduce the bullet glyph, size, and font from `numbering.xml`.
@@ -146,7 +147,7 @@ Every Word paragraph becomes one block (`<p>`, heading, `<li>`, table row) with 
 This is the first of three import skills that share the same shape (get the file → read the native XML → map to the Studiograph format → build → verify against the native render):
 
 - **Word → publication** (this skill)
-- **PowerPoint → presentation** — `ppt/slides/*.xml`, `slideLayouts`, `slideMasters`, EMU geometry (÷ 9525 → px at 96 dpi) onto fixed-size frames
+- **PowerPoint → presentation** — [[powerpoint-to-presentation]]: `ppt/slides/*.xml`, `slideLayouts`, `slideMasters`, EMU geometry (÷ 9525 → px at 96 dpi) onto fixed-size frames
 - **Excel → dataset** — `xl/worksheets/*.xml` + `sharedStrings.xml` + `styles.xml` number formats onto a CSV-bodied dataset with column formats
 
 ## References
