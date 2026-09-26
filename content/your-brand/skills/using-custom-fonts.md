@@ -2,7 +2,7 @@
 entity_type: skill
 entity_id: using-custom-fonts
 created_at: '2026-08-16T22:29:46.733Z'
-updated_at: '2026-08-16T22:29:46.733Z'
+updated_at: '2026-09-26T00:00:00.000Z'
 created_by: christian-marc-schmidt
 updated_by: christian-marc-schmidt
 date: '2026-08-16'
@@ -14,10 +14,10 @@ tags:
   - how-to
 name: Using Custom Fonts
 description: >-
-  How to install a licensed or custom brand typeface in Studiograph as a
-  reusable font kit — the @font-face pattern with full weight/style mapping, how
-  to reference the kit from other skills, licensing caveats, and what to do when
-  the font is not available.
+  How to install a licensed or custom brand typeface in Studiograph: upload the
+  files to a folder shared with everyone and name the family. Weights, italics
+  and name variants are read from the files themselves. Covers licensing, fonts
+  kept in other folders, fallback stacks and portability.
 applies_to:
   - presentation
   - publication
@@ -30,9 +30,9 @@ status: draft
 ---
 # Using Custom Fonts
 
-Most brands run on a licensed typeface — a foundry font, a bespoke commission, or a customised cut. This is how you install one so every deck, document and page in your workspace uses it automatically.
+Most brands run on a licensed typeface — a foundry font, a bespoke commission, or a customised cut. This is how you install one so every deck, document and page in your workspace uses it.
 
-The mechanics are the same as [[using-google-fonts]]: sandboxed canvases cannot fetch fonts from the internet, so the files must live in your workspace. What differs is licensing, and the fact that a real brand family has many cuts to map correctly.
+For an open font, [[using-google-fonts]] is simpler: nothing to upload. A licensed face has to live in your workspace, which brings licensing into it.
 
 ## Before you upload: check the licence
 
@@ -46,97 +46,25 @@ Check your licence for:
 
 If you only hold a desktop licence, you have two honest options: buy the web licence, or pick an open substitute and note the substitution in your brand skill. Do not upload it and hope.
 
-> This applies to your own workspace only. A font kit built here should **never** be seeded into another organisation's workspace — see *Portability* at the end.
+> This applies to your own workspace only. Fonts uploaded here should **never** be seeded into another organisation's workspace — see *Portability* at the end.
 
-## Build a font kit
+## Install it: upload the files
 
-A **font kit** is one entry holding every cut of a family plus the CSS to use them. Write it once; every other skill references it instead of repeating the declarations.
+Upload every cut you use — typically regular, medium, bold and their italics — to your library. `woff2`, `woff`, `ttf` and `otf` all work. If the foundry supplies a variable font, prefer it: one file covers the whole weight axis, with a separate file for italics.
 
-### Step 1 — Convert and upload
+**Where you put them matters.** Keep brand fonts in a folder shared with everyone. A font there, or in the same top-level folder as the artifact using it, is applied automatically wherever its family is named.
 
-Convert each cut to `.woff2` and upload them as workspace assets. A typical brand family needs 6–10 files: regular, medium, semibold, bold, and their italics. Upload only the weights you actually use.
+That is the whole install. Studiograph reads each file's own metadata — its family, weight and italic — so `font-weight: 700` gets the real bold cut rather than a synthesised one, and a foundry's name variants (`Acme Grotesk Black` as well as `Acme Grotesk` at 900) resolve too. There is nothing to write: no `@font-face` block, and no separate entry holding the declarations. An earlier version of this guide had you build a "font kit" entry for that; the product retired it, so don't create one.
 
-If the foundry supplies a variable font, prefer it — one file covers the whole weight axis, with a separate file for italics.
+## Use it
 
-### Step 2 — Write the kit entry
+Name the family in `font-family`, followed by a fallback stack (below). Your brand skill should name it too — see [[brand-skill-template]], which has a Typography section for exactly this. Other skills name the family the same way; none of them needs to carry the font's CSS.
 
-List the files, then give the complete CSS. This is the pattern:
+## A font kept in another folder
 
-```css
-@font-face {
-  font-family: 'Acme Grotesk';
-  src: url('/api/assets/<asset-id>/AcmeGrotesk-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
+A font in any other folder is not applied automatically. Either move it to a folder shared with everyone, or declare it in the artifact itself: open the font in the library, use **Copy @font-face**, and put the rule in the artifact's shared head. A font declared that way travels with the artifact, like an image.
 
-@font-face {
-  font-family: 'Acme Grotesk';
-  src: url('/api/assets/<asset-id>/AcmeGrotesk-RegularItalic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: block;
-}
-
-@font-face {
-  font-family: 'Acme Grotesk';
-  src: url('/api/assets/<asset-id>/AcmeGrotesk-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: block;
-}
-
-@font-face {
-  font-family: 'Acme Grotesk';
-  src: url('/api/assets/<asset-id>/AcmeGrotesk-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: block;
-}
-```
-
-**Every cut is its own `@font-face` block** with the same `font-family` name and a different weight/style pair. That is what lets you write `font-weight: 700` in your CSS and get the real bold cut instead of a synthesised one.
-
-**Map weights honestly.** If the foundry calls it "Book" and it sits at 450, declare it where it actually falls — not wherever is convenient. A family whose weights are mislabelled produces layouts that look subtly wrong everywhere and are painful to debug later.
-
-**Filenames with spaces must be URL-encoded** — `Acme%20Grotesk-Bold.woff2`. Copy the asset URL exactly as given rather than retyping it.
-
-### Step 3 — Add aliases if the family uses name variants
-
-Some brand systems refer to cuts by name rather than weight (`Acme Grotesk Black` rather than `font-weight: 900`). Declare those as additional families pointing at the same files, so both spellings work:
-
-```css
-@font-face {
-  font-family: 'Acme Grotesk Black';
-  src: url('/api/assets/<asset-id>/AcmeGrotesk-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: block;
-}
-```
-
-### Step 4 — Say how to use it
-
-End the kit with usage instructions, so any skill that references it knows what to do:
-
-> When a skill uses this kit, include the CSS above **before** the template's own CSS.
-> Then set `font-family: 'Acme Grotesk', system-ui, sans-serif;`
-
-## Referencing the kit from other skills
-
-Once the kit exists, other skills point at it rather than repeating the declarations:
-
-```markdown
-## Fonts
-
-This template uses [[acme-grotesk-font-kit]]. Include its `@font-face`
-block before the CSS below, then use `var(--sans)` throughout.
-```
-
-Your brand skill should name it too — see [[brand-skill-template]], which has a Typography section for exactly this.
-
-Keeping declarations in one place means a font swap is a one-entry edit rather than a hunt through every template.
+If you write the rules by hand, give every cut its own `@font-face` with the same `font-family` and its real weight and style, and copy the asset URL exactly as given — filenames with spaces are URL-encoded (`Acme%20Grotesk-Bold.woff2`).
 
 ## Always write a fallback stack
 
@@ -158,14 +86,13 @@ That matters in three places:
 - **Seeded or copied workspaces.** A template carrying hard-coded asset URLs from a different workspace renders in fallbacks with no error message.
 - **Any skill meant to be portable.** Write it with a plain fallback stack and a note naming the intended font, rather than a hard-coded URL that only works in one place.
 
-The rule of thumb: **a font kit belongs to a workspace; a template should survive without one.** Templates should name families and provide fallbacks; kits supply the real files locally.
+The rule of thumb: **the fonts belong to a workspace; a template should survive without them.** Templates name families and provide fallbacks; each workspace supplies the files.
 
 ## Asking for it
 
 ```text
-I've uploaded six cuts of Acme Grotesk to the workspace.
-Build a font kit entry for them — regular, medium, bold and their italics —
-and wire it into our brand skill as the body font.
+I've uploaded six cuts of Acme Grotesk to our shared brand folder.
+Make it the body font in our brand skill.
 ```
 
 ## Checking it worked
@@ -176,4 +103,4 @@ Ask for a render and look at it. The reliable tells that a real cut is loading r
 - **Italic** shows true italic construction (a single-storey *a*, entry and exit strokes), not a slanted roman.
 - Weight steps look distinct rather than collapsing into two.
 
-If any of those look wrong, a cut is missing from the kit and the browser is faking it.
+If any of those look wrong, a cut is missing from the library and the browser is faking it.

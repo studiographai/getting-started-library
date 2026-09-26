@@ -4,6 +4,30 @@ All notable changes to the Getting Started library are recorded here. Versions
 follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html); the version a
 workspace has installed is stamped at provisioning so updates know what to apply.
 
+## [1.2.1] - 2026-09-26
+
+Retires the "font kit" from the brand scaffolding. Studiograph removed its
+font-skill feature when uploaded fonts began applying automatically by family
+name, but `using-custom-fonts` still taught the agent to build a kit entry, so
+an agent following it recreated the retired pattern.
+
+### Changed
+
+- **`your-brand/skills/using-custom-fonts.md`** — rewritten around how fonts
+  work now: upload the files to a folder shared with everyone and name the
+  family; weights, italics and name variants come from the files' own metadata.
+  A font kept in another folder is declared in the artifact itself (the
+  library's **Copy @font-face**). The build-a-kit steps, the kit-referencing
+  pattern and the "Build a font kit entry" prompt are gone, and the skill now
+  tells the reader not to create one. Licensing, fallback, portability and
+  checking sections kept.
+- **`your-brand/skills/brand-skill-template.md`** — dropped the "Font kit"
+  field; the upload note now says where to put the files.
+- **`core-skills/skills/word-to-publication.md`** — Type mapping names the
+  family when the font applies automatically and declares it otherwise; no
+  "font-kit skill" fallback.
+- `manifest.json`: `version` 1.2.1.
+
 ## [1.2.0] - 2026-08-24
 
 Second core skill in the import series, validated end-to-end before landing.
