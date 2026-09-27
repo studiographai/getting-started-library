@@ -69,9 +69,7 @@ Give every colour a role, not just a name. Roles are what get applied; hex value
 
 **Fallbacks:** `[GEORGIA, SERIF]` / `[SYSTEM-UI, SANS-SERIF]` — used when the licensed font is not available in a sandboxed page.
 
-> **Fonts must be uploaded to this workspace to render.** Upload your `.woff2` files as assets first, then name them here. Without that, pages fall back to the stack above — silently, with no error. See [[using-google-fonts]] for a free font, or [[using-custom-fonts]] for a licensed one. If you cannot licence a font for web use, choose the closest open equivalent and say so here.
-
-**Font kit:** `[LINK THE FONT KIT ENTRY HOLDING THE @font-face DECLARATIONS, IF YOU HAVE ONE]`
+> **A licensed font must be in your library to render.** Upload its files to a folder shared with everyone, then name the family here — see [[using-custom-fonts]]. Without that, pages fall back to the stack above — silently, with no error. A Google font needs no upload — see [[using-google-fonts]]. If you cannot licence a font for web use, choose the closest open equivalent and say so here.
 
 ## Logo
 

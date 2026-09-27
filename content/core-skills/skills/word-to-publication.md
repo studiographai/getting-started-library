@@ -103,7 +103,7 @@ A publication is **one `pages` frame** with `pagination`. Never one frame per pa
 
 ### Type mapping
 
-- Family: the real family from the font table, loaded via `@font-face` in `shared.head` from workspace assets (see [[using-custom-fonts]]; if your workspace has a font-kit skill for the family, use its declarations). Load **every** weight/style the document uses in one edit — a partial set makes the browser faux-bold and looks worse than the fallback. Always give a fallback stack.
+- Family: the real family from the font table. If it is in the library in the publication's own top-level folder or a folder shared with everyone, naming it is enough — it is applied automatically; otherwise declare it via `@font-face` in `shared.head` (see [[using-custom-fonts]]). When you declare, load **every** weight/style the document uses in one edit — a partial set makes the browser faux-bold and looks worse than the fallback. Always give a fallback stack.
 - Size: half-points ÷ 2 × 4⁄3 → px. Line: `lineRule="exact"` → `line-height: <twentieths ÷ 15>px` and **no** vertical padding on the block; `auto` 240 → `line-height: normal` is *not* the same as Word (Word single spacing uses the font's *win* ascent+descent) — compute it: `(winAscent + winDescent) ÷ unitsPerEm × size`. `atLeast` → `min-height` on the line is not expressible; use the exact value if the text never exceeds it.
 - **Baseline within an exact line:** Word places the baseline at `lineTop + (lineHeight − descentPortion)` and, in the cases measured, that lands lower than CSS's half-leading placement by about 1 px at 12/15 pt. Measure it against the reference PDF and absorb the difference in `margins.top` / the page-1 spacer, not in per-line padding.
 - **Put `font-size` on the same block element that carries the fixed `line-height`** — never only on inner spans. If a block keeps a small inherited font-size (the 16px strut) while a large span sets its own, some render environments inflate the line box far past the fixed line-height (measured ~1.3× in headless rendering, invisible in a quick local check). Spans override only deltas from the block's size.
@@ -139,7 +139,7 @@ Every Word paragraph becomes one block (`<p>`, heading, `<li>`, table row) with 
 - A Word document with no footer gets no footer; with no page numbers gets none. Reproduce absence as faithfully as presence.
 - Keep one frame. Page 1 exceptions are spacers and `furniture.first`, not a second frame.
 - Do not shrink type or leading to make content fit — if it paginates differently, find the measurement you got wrong.
-- Never put credentials, tokens, or workspace-specific asset URLs into a portable skill; a template skill names the font family and leaves the kit to the workspace ([[using-custom-fonts]] → *Portability*).
+- Never put credentials, tokens, or workspace-specific asset URLs into a portable skill; a template skill names the font family and leaves the files to the workspace ([[using-custom-fonts]] → *Portability*).
 - Say what you could not verify (e.g. "pages 2+ offset computed, not measured — reference PDF is one page").
 
 ## Series
