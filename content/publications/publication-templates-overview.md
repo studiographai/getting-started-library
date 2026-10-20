@@ -14,7 +14,7 @@ name: Publication Templates — Overview
 ---
 # Publication Templates — Overview
 
-Each document template in this folder is a **skill**. A skill is a document that tells the AI how something should look — here, that means the page design of a finished document: type, margins, running headers, page numbers. In this folder, "skill" and "document template" mean the same thing.
+Each document template below is a **skill**, kept in Studio › Skills. A skill is a document that tells the AI how something should look — here, that means the page design of a finished document: type, margins, running headers, page numbers. Here, "skill" and "document template" mean the same thing.
 
 ## 1. Pick a template
 
@@ -43,7 +43,7 @@ Length: about 4 pages
 Use the notes I've pasted below. Show me an outline before you write it.
 ```
 
-Name the skill exactly as it is written on its entry — `minimal-report`, `corporate-brochure`. That is what loads the design.
+Name the skill as Studio › Skills shows it, or type / in chat and pick it — `minimal-report`, `corporate-brochure`. That is what loads the design.
 
 Pages take care of themselves — content flows across as many pages as it needs and numbers them automatically.
 

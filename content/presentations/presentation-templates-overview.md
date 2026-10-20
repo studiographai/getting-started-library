@@ -16,7 +16,7 @@ name: Presentation Templates — Overview
 ---
 # Presentation Templates — Overview
 
-Each slide template in this folder is a **skill**. A skill is a document that tells the AI how something should look — here, that means the colours, fonts, layouts and spacing of a deck. In this folder, "skill" and "slide template" mean the same thing.
+Each slide template below is a **skill**, kept in Studio › Skills. A skill is a document that tells the AI how something should look — here, that means the colours, fonts, layouts and spacing of a deck. Here, "skill" and "slide template" mean the same thing.
 
 ## 1. Pick a template
 
@@ -37,7 +37,7 @@ Length: 9 slides
 Cover the three priorities for the year and what we need to decide. Show me the outline before you build it.
 ```
 
-Name the skill exactly as it is written on its entry — `signal`, `mat`, `long-table`. That is what loads the design.
+Name the skill as Studio › Skills shows it, or type / in chat and pick it — `signal`, `mat`, `long-table`. That is what loads the design.
 
 Ask for the outline first. It is quicker to fix a list than a finished deck.
 

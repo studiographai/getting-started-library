@@ -4,6 +4,27 @@ All notable changes to the Getting Started library are recorded here. Versions
 follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html); the version a
 workspace has installed is stamped at provisioning so updates know what to apply.
 
+## [1.2.2] - 2026-10-20
+
+Skills live in Studio › Skills now (Studiograph alpha.113 retired the `skill`
+entry type), so the overviews stop sending people to a folder for them.
+
+### Changed
+
+- **The six template overviews** (diagrams, infographics, landing pages,
+  presentations, publications, social media): each template "below is a
+  **skill**, kept in Studio › Skills" (was "in this folder"), and "Name the
+  skill as Studio › Skills shows it, or type / in chat and pick it" (was "as it
+  is written on its entry").
+- **`core-skills/core-skills-overview.md`**: the core skills "live in Studio ›
+  Skills", and a skill "is a short page of rules in Studio › Skills. Make one
+  there with New skill, or ask for one" (was "just an entry"). It stays in the
+  Core Skills folder.
+- **`start-here.md`**: "Every template here is a skill, kept in Studio ›
+  Skills", used by naming it or by picking it with / in chat (was "in this
+  folder").
+- `manifest.json`: `version` 1.2.2.
+
 ## [1.2.1] - 2026-09-26
 
 Retires the "font kit" from the brand scaffolding. Studiograph removed its

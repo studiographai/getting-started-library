@@ -15,7 +15,7 @@ name: Core Skills — Overview
 ---
 # Core Skills — Overview
 
-The skills in this folder are working techniques, not templates. Each one teaches the AI a method — how to choose a chart, edit a sentence, check a colour palette — that improves anything you make, in any folder.
+These skills are working techniques, not templates, and they live in Studio › Skills. Each one teaches the AI a method — how to choose a chart, edit a sentence, check a colour palette — that improves anything you make, in any folder.
 
 ## Use one
 
@@ -50,7 +50,7 @@ Skills combine — a deck can take its look from a presentation template and its
 
 ## Create your own
 
-The most valuable skill is the one only your team can write: your brand. A skill is just an entry that states the rules — ask for one:
+The most valuable skill is the one only your team can write: your brand. A skill is a short page of rules in Studio › Skills. Make one there with New skill, or ask for one:
 
 ```text
 Create a skill called `acme-brand`.

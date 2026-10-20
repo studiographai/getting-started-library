@@ -16,7 +16,7 @@ name: Landing Page Templates — Overview
 ---
 # Landing Page Templates — Overview
 
-Each landing page template in this folder is a **skill**. A skill is a document that tells the AI how something should look — here, that means the sections, colours and type of a marketing page. In this folder, "skill" and "landing page template" mean the same thing.
+Each landing page template below is a **skill**, kept in Studio › Skills. A skill is a document that tells the AI how something should look — here, that means the sections, colours and type of a marketing page. Here, "skill" and "landing page template" mean the same thing.
 
 ## 1. Pick a template
 
@@ -43,7 +43,7 @@ Tone: energetic and direct
 Show me the section outline before you build it.
 ```
 
-Name the skill exactly as it is written on its entry — `agency-landing`, `coming-soon-landing`. That is what loads the design.
+Name the skill as Studio › Skills shows it, or type / in chat and pick it — `agency-landing`, `coming-soon-landing`. That is what loads the design.
 
 Have your logo, product shots, and copy points ready — attach or paste them into the request. If you have a brand skill ([[your-brand-overview]]), name it too and the page comes out in your colours and type.
 

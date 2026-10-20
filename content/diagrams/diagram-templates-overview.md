@@ -14,7 +14,7 @@ name: Diagram Templates — Overview
 ---
 # Diagram Templates — Overview
 
-Each diagram template in this folder is a **skill**. A skill is a document that tells the AI how something should look — here, that means the shapes, lines, colours and type of a diagram. In this folder, "skill" and "diagram template" mean the same thing.
+Each diagram template below is a **skill**, kept in Studio › Skills. A skill is a document that tells the AI how something should look — here, that means the shapes, lines, colours and type of a diagram. Here, "skill" and "diagram template" mean the same thing.
 
 ## 1. Pick a template
 
@@ -43,7 +43,7 @@ Format: widescreen, for a slide
 Show me the steps in text before you draw.
 ```
 
-Name the skill exactly as it is written on its entry — `flowchart-diagram`, `org-chart-diagram`. That is what loads the design.
+Name the skill as Studio › Skills shows it, or type / in chat and pick it — `flowchart-diagram`, `org-chart-diagram`. That is what loads the design.
 
 A good diagram is mostly deletion — every box earns its place, and the accent colour marks only the one or two things the reader should see first. If it needs more than nine boxes, it is probably two diagrams.
 

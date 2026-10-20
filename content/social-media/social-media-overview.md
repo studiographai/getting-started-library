@@ -14,7 +14,7 @@ name: Social Media Templates — Overview
 ---
 # Social Media Templates — Overview
 
-Each social template in this folder is a **skill**. A skill is a document that tells the AI how something should look — here, that means the size, layout, colours and type of a post graphic. In this folder, "skill" and "social template" mean the same thing.
+Each social template below is a **skill**, kept in Studio › Skills. A skill is a document that tells the AI how something should look — here, that means the size, layout, colours and type of a post graphic. Here, "skill" and "social template" mean the same thing.
 
 ## 1. Pick the size
 
@@ -38,7 +38,7 @@ The point: we cut report turnaround from four hours to twenty minutes.
 Lead with the number. One line of context underneath.
 ```
 
-Name the skill exactly as it is written on its entry. Give it **one** point to make — that is the whole discipline of the format.
+Name the skill as Studio › Skills shows it, or type / in chat and pick it. Give it **one** point to make — that is the whole discipline of the format.
 
 Name your brand skill alongside it ([[your-brand-overview]]) and it comes out in your colours and type.
 
