@@ -14,7 +14,7 @@ name: Infographic Templates — Overview
 ---
 # Infographic Templates — Overview
 
-Each infographic template in this folder is a **skill**. A skill is a document that tells the AI how something should look — here, that means the layout, colours and type of a graphic. In this folder, "skill" and "infographic template" mean the same thing.
+Each infographic template below is a **skill**, kept in Studio › Skills. A skill is a document that tells the AI how something should look — here, that means the layout, colours and type of a graphic. Here, "skill" and "infographic template" mean the same thing.
 
 ## 1. Pick a template
 
@@ -45,7 +45,7 @@ Format: square, for social
 Five milestones with one line of context each. Show me the wording before you build it.
 ```
 
-Name the skill exactly as it is written on its entry — `timeline-flow`, `swot-quadrant`, `funnel-flow`. That is what loads the design.
+Name the skill as Studio › Skills shows it, or type / in chat and pick it — `timeline-flow`, `swot-quadrant`, `funnel-flow`. That is what loads the design.
 
 Say what shape you need — square for a feed, portrait for a story, widescreen for a slide.
 

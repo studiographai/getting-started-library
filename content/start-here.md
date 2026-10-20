@@ -36,7 +36,7 @@ Every folder here works the same way: an **overview** that shows you how to ask,
 
 - **Entry** — anything saved in the workspace: a note, a person, a project, a report. Entries come in three formats: **docs** (written pages), **sheets** (tables of data), and **canvases**.
 - **Canvas** — the designed format: a deck, a paginated document, a graphic, a working page. Everything the templates in this folder make is a canvas.
-- **Skill** — a document that tells the AI how something should look or be done. Every template in this folder is a skill. You use one by naming it in a request.
+- **Skill** — a document that tells the AI how something should look or be done. Every template here is a skill, kept in Studio › Skills. You use one by naming it in a request, or by picking it with / in chat.
 
 ## Your first fifteen minutes
 
